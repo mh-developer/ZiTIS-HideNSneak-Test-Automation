@@ -17,24 +17,43 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'hideNsneak.Login.loginIntoApplicationWithGlobalVariable'()
 
-WebUI.navigateToUrl('https://hidensneak.web.app/login')
+WebUI.navigateToUrl('https://hidensneak.web.app/rooms')
 
-WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/img_Log_logo'))
+WebUI.delay(2)
 
-'Null Value'
-WebUI.setText(findTestObject('Pages/Page_Login.HideNSneak/input_Email_ion-input-0'), '')
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/p_Catch me if you can'))
 
-WebUI.setEncryptedText(findTestObject('Pages/Page_Login.HideNSneak/input_Password_ion-input-1'), 'PblvLzUlPsM=')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/ion-button_LOG IN'))
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-button_Cancel'))
 
-WebUI.delay(3)
+WebUI.delay(2)
 
-url = WebUI.getUrl()
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-icon_Lobby_arrow-up-circle'))
 
-WebUI.verifyEqual(url, 'https://hidensneak.web.app/login')
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-icon_Lobby_person-add'))
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/input_Enter room code to join_ion-input-0'), 
+    'og9b')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-button_Join'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/p_Catch me if you can'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-button_Quit now'), 
+    0)
 
 WebUI.closeBrowser()
 

@@ -21,13 +21,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://hidensneak.web.app/login')
 
-WebUI.click(findTestObject('Pages/Page_LoginHideNSneak/img_Log_logo'))
+WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/img_Log_logo'))
 
-WebUI.setText(findTestObject('Pages/Page_LoginHideNSneak/input_Email_ion-input-0'), 'demo')
+WebUI.setText(findTestObject('Pages/Page_Login.HideNSneak/input_Email_ion-input-0'), 'demo')
 
-WebUI.setEncryptedText(findTestObject('Pages/Page_LoginHideNSneak/input_Password_ion-input-1'), 'PblvLzUlPsM=')
+WebUI.setEncryptedText(findTestObject('Pages/Page_Login.HideNSneak/input_Password_ion-input-1'), 'PblvLzUlPsM=')
 
-WebUI.click(findTestObject('Pages/Page_LoginHideNSneak/ion-button_LOG IN'))
+WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/ion-button_LOG IN'))
 
 WebUI.delay(3)
 

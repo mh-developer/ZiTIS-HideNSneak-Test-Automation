@@ -17,24 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'hideNsneak.Login.loginIntoApplicationWithGlobalVariable'()
 
-WebUI.navigateToUrl('https://hidensneak.web.app/login')
+WebUI.navigateToUrl('https://hidensneak.web.app/rooms')
 
-WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/img_Log_logo'))
+WebUI.delay(2)
 
-'Null Value'
-WebUI.setText(findTestObject('Pages/Page_Login.HideNSneak/input_Email_ion-input-0'), '')
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-icon_Lobby_arrow-up-circle'))
 
-WebUI.setEncryptedText(findTestObject('Pages/Page_Login.HideNSneak/input_Password_ion-input-1'), 'PblvLzUlPsM=')
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-icon_Lobby_person-add'))
 
-WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/ion-button_LOG IN'))
+WebUI.delay(1)
 
-WebUI.delay(3)
+WebUI.setText(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/input_Enter room code to join_ion-input-0'), 
+    'narobe')
 
-url = WebUI.getUrl()
+WebUI.delay(1)
 
-WebUI.verifyEqual(url, 'https://hidensneak.web.app/login')
+WebUI.click(findTestObject('Object Repository/Pages/Page_Rooms.HideNSneak/Page_HideNSneak/ion-button_Join'))
+
+WebUI.delay(1)
+
+WebUI.waitForAlert(2)
 
 WebUI.closeBrowser()
 

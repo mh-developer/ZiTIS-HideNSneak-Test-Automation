@@ -1,4 +1,4 @@
-package package_HideNSneak
+package hideNsneak
 
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
@@ -33,13 +33,10 @@ public class Login {
 
 		WebUI.openBrowser(applicationURL)
 		WebUI.waitForPageLoad(GlobalVariable.waitPresentTimeOut)
-		WebUI.maximizeWindow()
 
-		WebUI.waitForElementVisible(findTestObject('Pages/Page_LoginHideNSneak/img_Log_logo'), GlobalVariable.waitPresentTimeOut)
-
-		WebUI.sendKeys(findTestObject('Pages/Page_LoginHideNSneak/input_Email_ion-input-0'), username)
-		WebUI.sendKeys(findTestObject('Pages/Page_LoginHideNSneak/input_Password_ion-input-1'), password)
-		WebUI.click(findTestObject('Pages/Page_LoginHideNSneak/ion-button_LOG IN'))
+		WebUI.sendKeys(findTestObject('Pages/Page_Login.HideNSneak/input_Email_ion-input-0'), username)
+		WebUI.sendKeys(findTestObject('Pages/Page_Login.HideNSneak/input_Password_ion-input-1'), password)
+		WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/ion-button_LOG IN'))
 		WebUI.delay(3)
 	}
 

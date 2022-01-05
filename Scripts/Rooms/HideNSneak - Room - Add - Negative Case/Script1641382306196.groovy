@@ -17,24 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'hideNsneak.Login.loginIntoApplicationWithGlobalVariable'()
 
-WebUI.navigateToUrl('https://hidensneak.web.app/login')
+WebUI.navigateToUrl('https://hidensneak.web.app/rooms')
 
-WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/img_Log_logo'))
+WebUI.delay(2)
 
-'Null Value'
-WebUI.setText(findTestObject('Pages/Page_Login.HideNSneak/input_Email_ion-input-0'), '')
+WebUI.click(findTestObject('Pages/Page_Rooms.HideNSneak/ion-icon_Lobby_arrow-up-circle'))
 
-WebUI.setEncryptedText(findTestObject('Pages/Page_Login.HideNSneak/input_Password_ion-input-1'), 'PblvLzUlPsM=')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Pages/Page_Login.HideNSneak/ion-button_LOG IN'))
+WebUI.click(findTestObject('Pages/Page_Rooms.HideNSneak/ion-icon_Lobby_add'))
 
 WebUI.delay(3)
 
-url = WebUI.getUrl()
+WebUI.setText(findTestObject('Pages/Page_Rooms.HideNSneak/input_Name_ion-input-0'), '')
 
-WebUI.verifyEqual(url, 'https://hidensneak.web.app/login')
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Pages/Page_Rooms.HideNSneak/input_Max number players_ion-input-1'), '')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Pages/Page_Rooms.HideNSneak/ion-button_Create'))
+
+WebUI.delay(1)
+
+WebUI.waitForAlert(2)
 
 WebUI.closeBrowser()
 

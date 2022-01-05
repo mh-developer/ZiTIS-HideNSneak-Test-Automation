@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ion-icon_Lobby_arrow-up-circle</name>
+   <tag></tag>
+   <elementGuidId>fa5a42c5-0932-4fa0-a241-2a1b3d453ae8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>ion-icon[name=&quot;arrow-up-circle&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ion-icon[@name='arrow-up-circle']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>ion-icon</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>arrow-up-circle</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>md hydrated</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>arrow up circle</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;plt-tablet plt-cordova plt-desktop plt-hybrid md hydrated&quot;]/body[1]/app-root[1]/ion-app[@class=&quot;md ion-page hydrated&quot;]/ion-router-outlet[@class=&quot;hydrated&quot;]/app-navigation[@class=&quot;ion-page&quot;]/ion-tabs[1]/div[@class=&quot;tabs-inner&quot;]/ion-router-outlet[@class=&quot;hydrated&quot;]/app-room-list[@class=&quot;ion-page&quot;]/ion-content[@class=&quot;md hydrated&quot;]/ion-fab[@class=&quot;md fab-horizontal-end fab-vertical-bottom hydrated&quot;]/ion-fab-button[@class=&quot;ion-color ion-color-tertiary md ion-activatable ion-focusable hydrated ion-activated&quot;]/ion-icon[@class=&quot;md hydrated&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//ion-icon[@name='arrow-up-circle']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ion-fab-button/ion-icon</value>
+   </webElementXpaths>
+</WebElementEntity>
